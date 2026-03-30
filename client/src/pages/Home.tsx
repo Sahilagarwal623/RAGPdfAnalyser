@@ -135,7 +135,7 @@ export default function Home() {
             <div className="empty-state">
               <div className="empty-state-icon">🧠</div>
               <h1 className="empty-state-title">
-                <span className="gradient-text">Smart Document</span> Analyzer
+                <span className="gradient-text">Smart RAG Document</span> Analyzer
               </h1>
               <p className="empty-state-description">
                 Upload a PDF document and ask questions about its content.
