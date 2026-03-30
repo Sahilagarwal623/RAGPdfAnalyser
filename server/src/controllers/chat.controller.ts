@@ -24,7 +24,7 @@ export const queryDocument = async (req: Request, res: Response, next: NextFunct
     if (doc.status !== 'ready') {
       res.status(400).json({
         success: false,
-        error: `Document is not ready for querying. Current status: ${doc.status}`,
+        error: `Document is not ready yet for querying. Current status: ${doc.status}`,
       });
       return;
     }
