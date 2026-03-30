@@ -22,6 +22,7 @@ jobs:
             cd /home/azureuser/RAGPdfAnalyser
 
             echo "Pulling latest code..."
+            git reset --hard
             git pull origin main
 
             echo "Setting backend environment variables..."
@@ -37,8 +38,8 @@ jobs:
 
             echo "Rebuilding backend (Docker)..."
             cd ..
-            docker compose down
-            docker compose up -d --build
+            docker-compose down
+            docker-compose up -d --build
 
             echo "Building frontend..."
             cd client
